@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>SimulateurPanne</display-name>
+  	<!-- SERVLET -->
+	<servlet>
+		<display-name>MainServlet</display-name>
+		<servlet-name>MainServlet</servlet-name>
+		<servlet-class>org.tutorial.MainServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>MajRepareeServlet</display-name>
+		<servlet-name>MajRepareeServlet</servlet-name>
+		<servlet-class>org.tutorial.MajRepareeServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>PanneServlet</display-name>
+		<servlet-name>PanneServlet</servlet-name>
+		<servlet-class>org.tutorial.PanneServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>NewPanneServlet</display-name>
+		<servlet-name>NewPanneServlet</servlet-name>
+		<servlet-class>org.tutorial.NewPanneServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<display-name>NewPanneAleatoireServlet</display-name>
+		<servlet-name>NewPanneAleatoireServlet</servlet-name>
+		<servlet-class>org.tutorial.NewPanneAleatoireServlet</servlet-class>
+	</servlet>
+	
+	<!-- SERVLET MAPPING -->
+	<servlet-mapping>
+		<servlet-name>MainServlet</servlet-name>
+		<url-pattern>/MainServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>MajRepareeServlet</servlet-name>
+		<url-pattern>/MajRepareeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>PanneServlet</servlet-name>
+		<url-pattern>/PanneServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewPanneServlet</servlet-name>
+		<url-pattern>/NewPanneServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>NewPanneAleatoireServlet</servlet-name>
+		<url-pattern>/NewPanneAleatoireServlet</url-pattern>
+	</servlet-mapping>
+	
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
