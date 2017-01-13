@@ -1,0 +1,5 @@
+Afin de déployer le projet war sur tomcat il faut:
+
+- Lancer le serveur Tomcat
+- Copier le fichier .war dans le dossier "webapps" (un dossier SimulateurPanne devrait se créer)
+- Accéder à la page http://localhost:8080/SimulateurPanne/MainServlet
